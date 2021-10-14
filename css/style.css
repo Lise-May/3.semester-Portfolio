@@ -1,0 +1,95 @@
+/*---------- Sass Variabler ----------*/
+/*-----*/
+/*---------- fonts ----------*/
+/*-----*/
+/*---------- general --------- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+h1 {
+  color: #0040C1;
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+main {
+  background-color: #000000;
+}
+
+/*-----*/
+/*---------- nav bar --------- */
+/*-----*/
+/*---------- forside information --------- */
+.h2_front_page {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.h1_front_page {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.img_front_info {
+  width: 100%;
+}
+
+/*-----*/
+/*---------- om mig --------- */
+/*-----*/
+/*---------- min baggrund --------- */
+/*-----*/
+/*---------- kompetancer --------- */
+/*-----*/
+/*---------- projekter --------- */
+/*-----*/
+/*---------- anbefaling --------- */
+/*-----*/
+/*---------- fotter --------- */
+/* ----------------------------------------------------------------- */
+/* ---------------------- mediaquery tablet ------------------------ */
+@media screen and (min-width: 672px) and (max-width: 950px) {
+  /* ------------------------------------------------- */
+}
+
+/* ----------------------------------------------------------------- */
+/* ---------------------- mediaquery desktop ----------------------- */
+@media screen and (min-width: 951px) {
+  /*-----*/
+  /*---------- forside information --------- */
+  .front_info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.2fr 0.8fr;
+        grid-template-columns: 1.2fr 0.8fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+        grid-template-areas: "col_left col_right";
+    width: 100%;
+    height: 100%;
+  }
+  .col_left {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: col_left;
+  }
+  .col_right {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: col_right;
+  }
+  /*---------- forside information --------- */
+}
+/*# sourceMappingURL=style.css.map */

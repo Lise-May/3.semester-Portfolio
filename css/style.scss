@@ -1,0 +1,109 @@
+/*---------- Sass Variabler ----------*/
+$primary_black: #000000;
+$primary_white: #ffffff;
+$primary_dark_gray: #444444;
+$primary_light_gray: #C4C4C4;
+$primary_blue: #0040C1;
+
+
+
+/*-----*/
+/*---------- fonts ----------*/
+
+
+/*-----*/
+/*---------- general --------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1{
+    color: $primary_blue;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    color: $primary_white;
+    font-size: 20px;
+}
+
+main{
+    background-color: $primary_black;
+}
+
+/*-----*/
+/*---------- nav bar --------- */
+
+
+
+/*-----*/
+/*---------- forside information --------- */
+.h2_front_page{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.h1_front_page{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.img_front_info{
+    width: 100%;
+}
+  
+/*-----*/
+/*---------- om mig --------- */
+
+/*-----*/
+/*---------- min baggrund --------- */
+
+/*-----*/
+/*---------- kompetancer --------- */
+
+/*-----*/
+/*---------- projekter --------- */
+
+/*-----*/
+/*---------- anbefaling --------- */
+
+/*-----*/
+/*---------- fotter --------- */
+
+
+
+/* ----------------------------------------------------------------- */
+/* ---------------------- mediaquery tablet ------------------------ */
+@media screen and (min-width: 672px) and (max-width: 950px) {
+    /* ------------------------------------------------- */
+
+
+
+}
+
+/* ----------------------------------------------------------------- */
+/* ---------------------- mediaquery desktop ----------------------- */
+@media screen and(min-width: 951px) {
+
+/*-----*/
+/*---------- forside information --------- */
+    .front_info {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:"col_left col_right";
+        width: 100%;
+        height: 100%;
+    }
+    .col_left { grid-area: col_left; }
+    .col_right { grid-area: col_right; }
+    /*---------- forside information --------- */
+
+}
