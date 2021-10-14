@@ -4,13 +4,10 @@ $primary_white: #ffffff;
 $primary_dark_gray: #444444;
 $primary_light_gray: #C4C4C4;
 $primary_blue: #0040C1;
-
-
-
 /*-----*/
 /*---------- fonts ----------*/
-
-
+$primary_font: "Abel", sans-serif;
+$secondary_font: "Lora", serif;
 /*-----*/
 /*---------- general --------- */
 
@@ -23,13 +20,22 @@ $primary_blue: #0040C1;
 
 h1{
     color: $primary_blue;
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
+    font: $secondary_font;
 }
 
 h2{
     color: $primary_white;
     font-size: 20px;
+    font: $primary_font;
+}
+
+p{
+    color: $primary_white;
+    font-size: 16px;
+    font: $primary_font;
+    line-height: 22px;
 }
 
 main{
@@ -59,7 +65,14 @@ main{
   
 /*-----*/
 /*---------- om mig --------- */
+.col_left_about{
+    padding: 20px;
+}
 
+.p_about_me{
+    padding: 10px 0 10px 0;
+}
+  
 /*-----*/
 /*---------- min baggrund --------- */
 
@@ -104,6 +117,19 @@ main{
     }
     .col_left { grid-area: col_left; }
     .col_right { grid-area: col_right; }
-    /*---------- forside information --------- */
+    /*---------- forside om mig --------- */
+    .about_me {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "col_left_about col_right_about";
+        width: 100%;
+        height: 100%;
+    }
+    .col_left_about { grid-area: col_left_about; }
+    .col_right_about { grid-area: col_right_about; }
 
 }

@@ -13,13 +13,22 @@
 
 h1 {
   color: #0040C1;
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
+  font: "Lora", serif;
 }
 
 h2 {
   color: #ffffff;
   font-size: 20px;
+  font: "Abel", sans-serif;
+}
+
+p {
+  color: #ffffff;
+  font-size: 16px;
+  font: "Abel", sans-serif;
+  line-height: 22px;
 }
 
 main {
@@ -46,6 +55,14 @@ main {
 
 /*-----*/
 /*---------- om mig --------- */
+.col_left_about {
+  padding: 20px;
+}
+
+.p_about_me {
+  padding: 10px 0 10px 0;
+}
+
 /*-----*/
 /*---------- min baggrund --------- */
 /*-----*/
@@ -90,6 +107,29 @@ main {
     -ms-grid-column: 2;
     grid-area: col_right;
   }
-  /*---------- forside information --------- */
+  /*---------- forside om mig --------- */
+  .about_me {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.2fr 0.8fr;
+        grid-template-columns: 1.2fr 0.8fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+        grid-template-areas: "col_left_about col_right_about";
+    width: 100%;
+    height: 100%;
+  }
+  .col_left_about {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: col_left_about;
+  }
+  .col_right_about {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: col_right_about;
+  }
 }
 /*# sourceMappingURL=style.css.map */
