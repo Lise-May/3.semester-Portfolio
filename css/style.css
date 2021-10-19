@@ -53,6 +53,19 @@ main {
   background-color: #ffffff;
 }
 
+.line_horizontal {
+  height: 2px;
+  background-color: #C4C4C4;
+  width: 80%;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.line_vertically {
+  height: 2px;
+}
+
 /*-----*/
 /*---------- nav bar --------- */
 /*-----*/
@@ -127,12 +140,56 @@ main {
 }
 
 /*-----*/
-/*---------- Skills - underside --------- */
+/*---------- Baggrund - underside --------- */
+.h1_background {
+  padding-top: 30px;
+  text-transform: uppercase;
+}
+
+.h2_bacground {
+  text-align: center;
+  color: #ffffff;
+  padding-top: 40px;
+}
+
+.background_info_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.background_type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 20px 0 15px 0;
+}
+
+.bacground_diploma, .background_year, .background_place {
+  color: #C4C4C4;
+}
+
 /*-----*/
 /*---------- Skills - forside --------- */
 .h2_my_skills {
   text-align: center;
   padding-top: 16px;
+  text-transform: uppercase;
 }
 
 .skills_wrapper {
@@ -171,7 +228,7 @@ main {
 }
 
 /*-----*/
-/*---------- projekter - forside --------- */
+/*---------- kontakt - forside --------- */
 .contact_me {
   background-color: #C4C4C4;
   height: 200px;
@@ -187,6 +244,7 @@ main {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .p_contact_me {
@@ -204,6 +262,8 @@ main {
   margin-left: auto;
 }
 
+/*-----*/
+/*---------- projekter - forside --------- */
 /*-----*/
 /*---------- anbefaling - forside --------- */
 /*-----*/

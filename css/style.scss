@@ -59,6 +59,20 @@ main{
     border-radius: 5px;
     background-color: $primary_white;
 }
+//Vandret linje
+.line_horizontal{
+    height: 2px;
+    background-color: $primary_light_gray;
+    width: 80%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+//lodret linje
+.line_vertically{
+    height: 2px;
+}
 
 /*-----*/
 /*---------- nav bar --------- */
@@ -138,7 +152,36 @@ main{
 }
   
 /*-----*/
-/*---------- Skills - underside --------- */
+/*---------- Baggrund - underside --------- */
+
+.h1_background{
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.h2_bacground{
+    text-align: center;
+    color: $primary_white;
+    padding-top: 40px;
+}
+
+.background_info_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.background_type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0 15px 0;
+}
+
+.bacground_diploma, .background_year, .background_place{
+    color: $primary_light_gray
+}
 
 
 /*-----*/
@@ -147,6 +190,7 @@ main{
 .h2_my_skills{
     text-align: center;
     padding-top: 16px;
+    text-transform: uppercase;
 }
 
 .skills_wrapper{
@@ -170,7 +214,7 @@ main{
 }
 
 /*-----*/
-/*---------- projekter - forside --------- */
+/*---------- kontakt - forside --------- */
 
 .contact_me{
     background-color: $primary_light_gray;
@@ -187,6 +231,7 @@ main{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .p_contact_me{
@@ -204,6 +249,9 @@ main{
     margin-left: auto;
 
 }
+/*-----*/
+/*---------- projekter - forside --------- */
+
 /*-----*/
 /*---------- anbefaling - forside --------- */
 
@@ -255,7 +303,6 @@ main{
     .col_right_about { grid-area: col_right_about; }
 
     /*---------- Skills - forside --------- */
-
     .skills_wrapper{
         flex-direction: row;
     }
