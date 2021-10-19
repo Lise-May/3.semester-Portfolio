@@ -19,6 +19,12 @@ h1 {
 }
 
 h2 {
+  color: #0040C1;
+  font-size: 20px;
+  font: "Abel", sans-serif;
+}
+
+h3 {
   color: #ffffff;
   font-size: 20px;
   font: "Abel", sans-serif;
@@ -37,6 +43,14 @@ main {
 
 .black_boks {
   border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #000000;
+}
+
+.white_boks {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
 /*-----*/
@@ -52,6 +66,7 @@ main {
 .h2_front_page {
   text-align: center;
   padding-top: 50px;
+  color: #ffffff;
 }
 
 .h1_front_page {
@@ -67,7 +82,14 @@ main {
 }
 
 /*-----*/
-/*---------- om mig --------- */
+/*---------- om mig - forside --------- */
+.h2_about_me {
+  color: #0040C1;
+  font-size: 24px;
+  text-align: center;
+  font: "Lora", serif;
+}
+
 .col_left_about {
   padding: 20px;
 }
@@ -105,13 +127,85 @@ main {
 }
 
 /*-----*/
-/*---------- min baggrund - underside --------- */
+/*---------- Skills - underside --------- */
 /*-----*/
-/*---------- kompetancer --------- */
+/*---------- Skills - forside --------- */
+.h2_my_skills {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.skills_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.h3_skills_part {
+  padding: 10px 0 10px 0;
+}
+
+.skills_part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  padding: 20px 0 15px 0;
+}
+
 /*-----*/
-/*---------- projekter --------- */
+/*---------- projekter - forside --------- */
+.contact_me {
+  background-color: #C4C4C4;
+  height: 200px;
+}
+
+.article_contact_me {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.h2_contact_me {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.p_contact_me {
+  color: #000000;
+  padding-bottom: 10px;
+}
+
+.contact_me_button {
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  padding: 5px;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /*-----*/
-/*---------- anbefaling --------- */
+/*---------- anbefaling - forside --------- */
 /*-----*/
 /*---------- fotter --------- */
 /* ----------------------------------------------------------------- */
@@ -123,7 +217,7 @@ main {
 /* ----------------------------------------------------------------- */
 /* ---------------------- mediaquery desktop ----------------------- */
 @media screen and (min-width: 951px) {
-  /*-----*/
+  /*--Generalt---*/
   /*---------- forside information --------- */
   .front_info {
     display: -ms-grid;
@@ -171,6 +265,16 @@ main {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: col_right_about;
+  }
+  /*---------- Skills - forside --------- */
+  .skills_wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .skills_part {
+    width: 31%;
   }
 }
 /*# sourceMappingURL=style.css.map */
