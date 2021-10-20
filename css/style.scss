@@ -92,6 +92,7 @@ main{
     text-align: center;
     padding-top: 50px;
     color: $primary_white;
+    
 }
 
 .h1_front_page{
@@ -106,7 +107,13 @@ main{
     margin-right: auto;
 }
 
+.typed-text{
+    text-transform: uppercase;
+}
 
+.cursor{
+    display: inline-block;
+}
   
 /*-----*/
 /*---------- om mig - forside --------- */

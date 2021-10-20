@@ -94,6 +94,14 @@ main {
   margin-right: auto;
 }
 
+.typed-text {
+  text-transform: uppercase;
+}
+
+.cursor {
+  display: inline-block;
+}
+
 /*-----*/
 /*---------- om mig - forside --------- */
 .h2_about_me {
