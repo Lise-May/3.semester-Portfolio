@@ -76,7 +76,77 @@ main{
 
 /*-----*/
 /*---------- nav bar --------- */
+header{
+    background-color: #262626;
+}
 
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    width: 70px;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    /*gap: 0;*/
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.nav-item{
+    margin: 16px 0;
+}
+
+.nav-menu.active{
+    left: 0;
+}
 
 
 /*-----*/
@@ -299,7 +369,35 @@ main{
 /* ---------------------- mediaquery desktop ----------------------- */
 @media screen and(min-width: 951px) {
 
-/*--Generalt---*/
+    /*--Generalt---*/
+
+    /*--Burgermenu---*/
+    .nav-menu{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+        position: inherit;
+        padding-left: 60%;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: unset;
+    }
+
+    .nav-link{ /*Hover effect*/
+        transition: 0.7s ease;
+    }
+
+    .nav-link:hover{ /*Hover effect*/
+        color: blue;
+    }
+
+    .hamburger{
+        display: none;
+    }
 /*---------- forside information --------- */
     .front_info {
         display: grid;
