@@ -100,6 +100,52 @@ main {
 
 .cursor {
   display: inline-block;
+  width: 2px;
+  background-color: #C4C4C4;
+  margin-left: 0,1rem;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+.cursor.typing {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #C4C4C4;
+  }
+  49% {
+    background-color: #C4C4C4;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #C4C4C4;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #C4C4C4;
+  }
+  49% {
+    background-color: #C4C4C4;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #C4C4C4;
+  }
 }
 
 /*-----*/

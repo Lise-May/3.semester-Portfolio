@@ -113,7 +113,24 @@ main{
 
 .cursor{
     display: inline-block;
+    width: 2px;
+    background-color: $primary_light_gray;
+    margin-left: 0,1rem;
+    animation: blink 1s infinite;
 }
+
+.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink{ // dette gør at cursoren blinker
+    0% { background-color: $primary_light_gray;} //denne behøves ikke, men jeg beholder den for en god ordens skyld
+    49% { background-color: $primary_light_gray;} //så transision ikke er så voldsom
+    50% { background-color: transparent; }
+    99% { background-color: transparent; } //så transision ikke er så voldsom
+    100% { background-color: $primary_light_gray;} //denne behøves ikke, men jeg beholder den for en god ordens skyld
+}
+
   
 /*-----*/
 /*---------- om mig - forside --------- */
