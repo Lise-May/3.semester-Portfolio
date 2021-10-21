@@ -423,6 +423,32 @@ a {
 
 /*-----*/
 /*---------- projekter - forside --------- */
+.my_projects {
+  padding: 50px 20px 100px 20px;
+}
+
+.h2_projects {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.h3_semester {
+  padding: 40px 0 10px 0;
+}
+
+.projects {
+  background-color: #C4C4C4;
+  margin: 10px 0px 10px 0;
+}
+
+.project_img {
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*-----*/
 /*---------- anbefaling - forside --------- */
 /*-----*/
