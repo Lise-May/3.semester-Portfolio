@@ -69,11 +69,6 @@ main{
     margin-left: auto;
 }
 
-//lodret linje
-.line_vertically{
-    height: 2px;
-}
-
 /*-----*/
 /*---------- nav bar --------- */
 header{
@@ -148,6 +143,10 @@ a{
     left: 0;
 }
 
+.nav-link{
+    font-size: 17px;
+}
+
 
 /*-----*/
 /*---------- forside information --------- */
@@ -162,7 +161,17 @@ a{
     text-align: center;
     padding-top: 50px;
     color: $primary_white;
+    font-size: 16px;
     
+}
+
+.col_left{
+    padding-top: 8%;
+}
+
+.col_right{
+    padding-top: 10%;
+    padding-bottom: 25%;
 }
 
 .h1_front_page{
@@ -175,6 +184,7 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 40px;
 }
 
 .typed-text{
@@ -212,7 +222,7 @@ a{
 }
 
 .col_left_about{
-    padding: 20px;
+    padding: 10% 20px 10% 20px;
 }
 
 .p_info{
@@ -227,8 +237,8 @@ a{
 .background_article{
     text-align: center;
     width: 265px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 10px 0 10px 0;
+    margin: 10px auto 10px auto;
 }
 
 .background_link{
@@ -282,6 +292,10 @@ a{
 
 /*-----*/
 /*---------- Skills - forside --------- */
+
+.my_skills{
+    padding: 10% 0 10% 0;
+}
 
 .h2_my_skills{
     text-align: center;
@@ -340,10 +354,10 @@ a{
     color: $primary_black;
     cursor: pointer;
     padding: 5px;
-    width: 200px;
-    margin-right: auto;
-    margin-left: auto;
+}
 
+.contact_button{
+    text-align: center;
 }
 /*-----*/
 /*---------- projekter - forside --------- */
@@ -360,16 +374,86 @@ a{
 /* ---------------------- mediaquery tablet ------------------------ */
 @media screen and (min-width: 672px) and (max-width: 950px) {
     /* ------------------------------------------------- */
+    
+    /*--Generalt---*/
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 23px;
+    }
+
+    h3{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    /*--heder info ---*/
+    
+    .nav-link{
+        font-size: 20px;
+    }
 
 
+    /*--om mig + mine skills---*/
+
+    .h2_front_page{
+        font-size: 18px;
+    }
+
+    .about_article, .my_skills{
+        padding: 15px 30px 10px 30px;
+    }
+
+    .background_article{
+       width: 310px;
+       padding: 10px 0 10px 0;
+    }
+
+    .my_skills{
+        padding: 10% 0 10% 0;
+    }
+
+    /*--kontakt mig---*/
+    .contact_me{
+        height: 170px;
+        padding: 2% 0 2% 0;
+    }
+
+    .contact_button{
+        padding-top: 10px;
+    }
+
+    .article_contact_me{
+        width: 83%;
+    }
 
 }
 
 /* ----------------------------------------------------------------- */
-/* ---------------------- mediaquery desktop ----------------------- */
-@media screen and(min-width: 951px) {
+/* ---------------------- mediaquery ipad pro ----------------------- */
+@media screen and(min-width: 951px) and (max-width: 1366px) {
 
     /*--Generalt---*/
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    p{
+        font-size: 20px;
+    }
 
     /*--Burgermenu---*/
     .nav-menu{
@@ -379,16 +463,18 @@ a{
         align-items: center;
         gap: 60px;
         position: inherit;
-        padding-left: 60%;
+        padding-left: 52%;
     }
 
     .navbar{
         display: flex;
         flex-direction: unset;
+        font-size: 25px;
     }
 
     .nav-link{ /*Hover effect*/
         transition: 0.7s ease;
+        font-size: 20px;
     }
 
     .nav-link:hover{ /*Hover effect*/
@@ -398,10 +484,19 @@ a{
     .hamburger{
         display: none;
     }
-/*---------- forside information --------- */
+
+    .logo{
+        width: 80px;
+    }
+
+    .cv_img{
+        height: 75px;
+    }
+    
+    /*---------- forside information --------- */
     .front_info {
         display: grid;
-        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-columns: 1.1fr 0.9fr;
         grid-template-rows: 1fr;
         gap: 0px 0px;
         grid-auto-flow: row;
@@ -409,8 +504,24 @@ a{
         width: 100%;
         height: 100%;
     }
-    .col_left { grid-area: col_left; }
-    .col_right { grid-area: col_right; }
+    .col_left { 
+        grid-area: col_left; 
+        padding-top: 350px;
+    }
+    .col_right { 
+        grid-area: col_right; 
+    }
+
+    .h2_front_page{
+        font-size: 20px;
+    }
+
+    .img_front_info{
+       width: 90%; 
+       padding-top: 300px;
+       padding-bottom: 600px;
+    }
+
     /*---------- forside om mig --------- */
     .about_me {
         display: grid;
@@ -422,18 +533,300 @@ a{
           "col_left_about col_right_about";
         width: 100%;
         height: 100%;
+        padding: 50px 0 50px 0;
     }
-    .col_left_about { grid-area: col_left_about; }
-    .col_right_about { grid-area: col_right_about; }
+    .col_left_about { 
+        grid-area: col_left_about; 
+        padding: 20px 40px 20px 70px;
+    }
+    .col_right_about { 
+        grid-area: col_right_about; 
+    }
+
+    .about_article{
+        padding-top: 18px;
+        padding-bottom: 13px;
+    }
+
+    .background_article{
+        width: 315px;
+        padding: 12px 0 12px 0;
+    }
+
+    .background_link{
+        font-size: 20px;
+    }
 
     /*---------- Skills - forside --------- */
+
+    .my_skills{
+        //padding: 50px 0 50px 0;
+        padding: 100px 70px 100px 70px;
+    }
+
+    .h2_my_skills{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
     .skills_wrapper{
         flex-direction: row;
     }
 
     .skills_part{
-        width: 31%;
-        
+        width: 25%;
     }
+
+    .h3_skills_part{
+        text-align: center;
+    }
+
+    /*---------- kontakt - forside --------- */
+    
+    .article_contact_me{
+        width: 85%;
+    }
+
+    .h2_contact_me{
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    .contact_button{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .contact_me_button{
+        font-size: 17px;
+        padding: 8px;
+    }
+
+    /*---------- Baggrund - underside --------- */
+    
+    .h1_background{
+        padding-left: 13%;
+    }
+    
+    .background_info_wrapper{
+        display: flex;
+        flex-direction: row;
+        padding: 0 20px 0 20px;
+    }
+
+    .background_line{
+        display: none;
+    }
+
+    .background_line_v{
+        border-left: 2px solid $primary_light_gray;
+        border-right: 2px solid $primary_light_gray;
+        height: 750px;
+        margin-top: 40px;
+    }
+
+}
+
+/* ---------------------- mediaquery desktop ----------------------- */
+@media screen and(min-width: 1367px) {
+
+    /*--Generalt---*/
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 27px;
+    }
+
+    h3{
+        font-size: 26px;
+    }
+
+    p{
+        font-size: 23px;
+    }
+
+    /*--Burgermenu---*/
+    .nav-menu{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+        position: inherit;
+        padding-left: 50%;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: unset;
+        font-size: 27px;
+    }
+
+    .nav-link{ /*Hover effect*/
+        transition: 0.7s ease;
+        font-size: 25px;
+    }
+
+    .nav-link:hover{ /*Hover effect*/
+        color: blue;
+    }
+
+    .hamburger{
+        display: none;
+    }
+
+    .logo{
+        width: 100px;
+    }
+
+    .cv_img{
+        height: 100px;
+    }
+
+    
+    /*---------- forside information --------- */
+    .front_info {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:"col_left col_right";
+        width: 100%;
+        height: 100%;
+    }
+    .col_left { 
+        grid-area: col_left; 
+        padding-top: 400px;
+    }
+    .col_right { 
+        grid-area: col_right; 
+    }
+
+    .h2_front_page{
+        font-size: 22px;
+    }
+
+    .img_front_info{
+       width: 90%; 
+       padding-top: 300px;
+       padding-bottom: 600px;
+       padding-right: 22px;
+    }
+
+    /*---------- forside om mig --------- */
+    .about_me {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "col_left_about col_right_about";
+        width: 100%;
+        height: 100%;
+        padding: 15% 0 200px 0;
+    }
+    .col_left_about { 
+        grid-area: col_left_about; 
+        padding: 0px 80px 0px 150px;
+    }
+    .col_right_about { 
+        grid-area: col_right_about; 
+    }
+
+    .about_article{
+        padding-top: 18px;
+        padding-bottom: 13px;
+    }
+
+    .background_article{
+        width: 315px;
+        padding: 12px 0 12px 0;
+    }
+
+    .background_link{
+        font-size: 20px;
+    }
+
+    .p_info{
+        word-spacing: 2px
+    }
+
+    /*---------- Skills - forside --------- */
+
+    .my_skills{
+        padding: 100px 0 100px 0;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .h2_my_skills{
+        padding-top: 20px;
+    }
+
+    .skills_wrapper{
+        flex-direction: row;
+    }
+
+    .skills_part{
+        width: 25%;
+    }
+
+    .h3_skills_part{
+        text-align: center;
+    }
+
+    .p_skills{
+        margin: 10px 0px 0px 0px;
+        word-spacing: 2px;
+    }
+
+    /*---------- kontakt - forside --------- */
+    .article_contact_me{
+        width: 78%;
+    }
+
+    .h2_contact_me{
+        padding-top: 40px;
+        padding-bottom: 15px;
+    }
+
+    .contact_button{
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .contact_me_button{
+        font-size: 18px;
+        padding: 5px;
+
+    }
+
+    /*---------- Baggrund - underside --------- */
+
+    .h1_background{
+        font-size: 40px;
+        padding-left: 9%;
+    }
+
+    .background_info_wrapper{
+        display: flex;
+        flex-direction: row;
+        padding: 0 20px 0 20px;
+    }
+
+    .background_line{
+        display: none;
+    }
+
+    .background_line_v{
+        border-left: 2px solid $primary_light_gray;
+        border-right: 2px solid $primary_light_gray;
+        height: 750px;
+        margin-top: 40px;
+    }
+    
 
 }
