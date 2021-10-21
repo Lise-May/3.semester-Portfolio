@@ -44,6 +44,10 @@ p{
     line-height: 22px;
 }
 
+a{
+    font: $primary_font;
+}
+
 main{
     background-color: $primary_black;
 }
@@ -51,7 +55,7 @@ main{
 .black_boks{
     border: 1px solid $primary_white;
     border-radius: 5px;
-    background-color: $primary_black;
+    background-color: $primary_white;
 }
 
 .white_boks{
@@ -242,7 +246,7 @@ a{
 }
 
 .background_link{
-    color: $primary_white;
+    color: $primary_black;
     font-size: 16px;
     cursor: pointer;
     padding: 5px;
@@ -433,6 +437,79 @@ a{
         height: 75px;
     }
 
+    /* ----- om projekterne ----- */
+    .about_project{
+        padding: 80px 20px;
+    }
+
+    .h1_about_project{
+        text-transform: uppercase;
+    }
+
+    .h2_about_project{
+        text-align: center;
+        color: $primary_white;
+    }
+
+    .img_abot_project{
+        width: 370px;
+    }
+
+    .col_right_about_project{
+        padding: 20px;
+    }
+
+    .h3_about_project{
+        padding: 20px 0 5px 0;
+    }
+
+    .h3_about_project_center{
+        padding: 40px 0 20px 0;
+        text-align: center;
+    }
+
+    .button_about_project{
+        text-align: center;
+        width: 265px;
+        padding: 10px 0 50px 0;
+        margin: 10px auto 10px auto;
+    }
+
+    .photos_about_project{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about_project_button{
+        color: $primary_black;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .about_project_container{
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .img_phone_abot_project{
+        width: 180px;
+    }
+
+    .img_pc_abot_project{
+        width: 100%;
+    }
+
+    .img_abot_project_phone{
+        height: 440px;
+        padding-left: 85px;
+        padding-top: 30px;
+    }
+
+    .project_center_space{
+        padding: 0 5px;
+    }
+
 /*-----*/
 /*---------- fotter --------- */
     .footer{
@@ -539,6 +616,40 @@ a{
     /*--anbefaling---*/
     .recommendations{
          padding: 50px 70px;
+    }
+
+    /*--Om projekterne---*/
+    .img_abot_project {
+        width: 420px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col_right_about_project{
+        padding: 20px 45px;
+    }
+
+    .h3_about_project {
+        padding: 40px 0 5px 0;
+    }
+
+    .photos_about_project{
+        padding: 20px 45px;
+    }
+
+    .img_phone_abot_project{
+        width: 210px;
+    }
+
+    .img_abot_project_phone{
+        height: 450px;
+        padding-left: 36%;
+        padding-top: 30px;
+    }
+
+    .project_center_space{
+        padding: 0 40px;
     }
 
     /*--footer---*/
@@ -770,6 +881,48 @@ a{
 
     .recommendation_wrapper{
         padding: 30px;
+    }
+
+     /*--om projekterne---*/
+
+    .img_abot_project {
+        width: 445px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col_right_about_project{
+        padding: 50px 65px;
+    }
+
+    .h3_about_project {
+        padding: 40px 0 5px 0;
+    }
+    .h3_about_project_center {
+        padding: 80px 0 30px 0;
+    }
+
+    .photos_about_project{
+        padding: 20px 45px;
+    }
+
+    .img_phone_abot_project{
+        width: 270px;
+    }
+
+    .about_project_button{
+        font-size: 20px;
+    }
+
+    .img_abot_project_phone{
+        height: 540px;
+        padding-left: 36%;
+        padding-top: 50px;
+    }
+
+    .project_center_space{
+        padding: 0 80px;
     }
 
     /*--footer---*/
@@ -1017,6 +1170,99 @@ a{
         padding: 30px;
     }
 
+    /* -- om projekterne */
+
+    .about_project_description {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "col_left_abot_project col_right_about_project";
+        width: 100%;
+        height: 100%;
+    }
+      
+    .col_left_about_project { 
+        grid-area: col_left_abot_project; 
+    }
+      
+    .col_right_about_project { 
+        grid-area: col_right_about_project; 
+    }
+
+    .photos_about_project {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "col_left_telephone col_right_pc";
+        width: 100%;
+        height: 100%;
+    }
+      
+    .col_left_telephone { 
+        grid-area: col_left_telephone; 
+    }
+      
+    .col_right_pc { 
+        grid-area: col_right_pc; 
+    }
+
+    .img_abot_project {
+        width: 770px;
+        padding-top: 8%;
+        padding-left: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col_right_about_project{
+        padding: 50px 65px;
+    }
+
+    .h3_about_project {
+        padding: 45px 0 18px 0;
+    }
+    .h3_about_project_center {
+        padding: 80px 0 30px 0;
+    }
+
+    .photos_about_project{
+        padding: 20px 40px;
+    }
+
+    .img_phone_abot_project{
+        width: 350px;
+    }
+
+    .about_project_button{
+        font-size: 20px;
+    }
+
+    .button_about_project{
+        padding: 10px 0 100px 0;
+    }
+
+    .about_project_line_v{
+        border-right: 2px solid $primary_light_gray;
+        height: 750px;
+        margin-top: 40px;
+    }
+
+    .img_abot_project_phone{
+        height: 640px;
+        padding-left: 32%;
+        padding-top: 100px;
+    }
+
+    .project_center_space{
+        padding: 0 80px;
+    }
+
     /*--footer---*/
     .footer_section{
         display: flex;
@@ -1033,7 +1279,4 @@ a{
     .p_some, .p_mail, .p_telephone {
         font-size: 18px;
     }
-    
-
 }
-
