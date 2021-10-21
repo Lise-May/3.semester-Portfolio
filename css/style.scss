@@ -385,16 +385,14 @@ a{
     }
 
     .project_img{
-        height: 300px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
         background-color: $primary_light_gray;
-        cursor: pointer;
     }
 
     .projects_mobile{
         padding: 20px;
+        width: 225px;
+        background-color: $primary_light_gray;
     }
 
 /*-----*/
@@ -602,7 +600,7 @@ a{
 
     /*--projekter---*/
     .my_projects{
-        padding: 100px 90px;
+        padding: 100px 66px;
     }
 
     .projects{
@@ -611,6 +609,17 @@ a{
 
     .projects{
         margin: 10px 0px 10px 0;
+    }
+
+    //test
+    .my_projects_container{
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    .project_img{
+        width: 49%;
+        background-color: $primary_light_gray;
     }
 
     /*--anbefaling---*/
@@ -867,11 +876,13 @@ a{
     }
 
     .project_img{
-        height: 450px;
+        width: 49%;
     }
 
     .projects_mobile{
-        height: 500px;
+        padding: 20px;
+        width: 260px;
+        background-color: $primary_light_gray;
     }
 
     /*--anbefaling- forside--*/
@@ -1148,7 +1159,7 @@ a{
      /*--projekter- forside --*/
     
     .my_projects{
-        padding: 100px 22%;
+        padding: 100px 10%;
     }
 
     .projects{
@@ -1157,17 +1168,13 @@ a{
     }
 
     .project_img{
-        height: 500px;
+        width: 49%;
     }
 
-
-    /*--anbefaling- forside--*/
-    .recommendations{
-         padding: 100px 80px;
-    }
-
-    .recommendation_wrapper{
-        padding: 30px;
+    .projects_mobile{
+        padding: 20px;
+        width: 300px;
+        background-color: $primary_light_gray;
     }
 
     /* -- om projekterne */
@@ -1261,6 +1268,15 @@ a{
 
     .project_center_space{
         padding: 0 80px;
+    }
+
+    /*--anbefaling- forside--*/
+    .recommendations{
+        padding: 100px 160px;
+    }
+
+    .recommendation_wrapper{
+       padding: 30px;
     }
 
     /*--footer---*/
