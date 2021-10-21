@@ -27,7 +27,7 @@ h1{
 
 h2{
     color: $primary_blue;
-    font-size: 20px;
+    font-size: 22px;
     font: $primary_font;
 }
 
@@ -361,12 +361,12 @@ a{
 }
 /*-----*/
 /*---------- projekter - forside --------- */
-
+    
     .my_projects{
-        padding: 50px 20px 100px 20px;
+        padding: 50px 20px 50px 20px;
     }
 
-    .h2_projects{
+    .h2_projects, .h2_recommendations{
         text-align: center;
         text-transform: uppercase;
         padding-bottom: 10px;
@@ -377,7 +377,6 @@ a{
     }
 
     .projects{
-        background-color: $primary_light_gray;
         margin: 10px 0px 10px 0;
     }
 
@@ -386,15 +385,80 @@ a{
         display: block;
         margin-left: auto;
         margin-right: auto;
+        background-color: $primary_light_gray;
+        cursor: pointer;
+    }
 
+    .projects_mobile{
+        padding: 20px;
     }
 
 /*-----*/
 /*---------- anbefaling - forside --------- */
+    .h2_recommendations{
+        padding-bottom: 20px;
+    }
+
+    .recommendations{
+        padding: 50px 20px 50px 20px;
+    }
+
+    .recommendation{
+        background-color: $primary_light_gray;
+    }
+
+    .recommendation_wrapper{
+        padding: 15px;
+    }
+
+    .h3_recommendation, .p_recommendation_text, .p_recommendation_employer{
+        color: $primary_black;
+    }
+
+    .h3_recommendation{
+        padding-bottom: 15px;
+    }
+
+    .p_recommendation_employer{
+        padding-top: 15px;
+    }
+
+    .recommendation_footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .shell_logo{
+        height: 75px;
+    }
 
 /*-----*/
 /*---------- fotter --------- */
+    .footer{
+        background-color: $primary_dark_gray;
+    }
 
+    .footer_section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .some, .footer_contact{
+        padding: 10px;
+    }
+
+    .p_some, .p_mail, .p_telephone{
+        font-size: 16px;
+    }
+
+    .copyright{
+        text-align: center;
+        font-size: 12px;
+        padding-top: 20px;
+    }
 
 
 /* ----------------------------------------------------------------- */
@@ -457,6 +521,36 @@ a{
 
     .article_contact_me{
         width: 83%;
+    }
+
+    /*--projekter---*/
+    .my_projects{
+        padding: 100px 90px;
+    }
+
+    .projects{
+        margin: 10px 40px;
+    }
+
+    .projects{
+        margin: 10px 0px 10px 0;
+    }
+
+    /*--anbefaling---*/
+    .recommendations{
+         padding: 50px 70px;
+    }
+
+    /*--footer---*/
+    .footer_section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10% ;
+    }
+    .some, .footer_contact {
+        padding: 25px;
     }
 
 }
@@ -652,9 +746,52 @@ a{
         margin-top: 40px;
     }
 
+    /*--projekter- forside --*/
+    .my_projects{
+        padding: 100px 120px;
+    }
+
+    .projects{
+        margin: 10px 40px;
+    }
+
+    .project_img{
+        height: 450px;
+    }
+
+    .projects_mobile{
+        height: 500px;
+    }
+
+    /*--anbefaling- forside--*/
+    .recommendations{
+         padding: 100px 80px;
+    }
+
+    .recommendation_wrapper{
+        padding: 30px;
+    }
+
+    /*--footer---*/
+    .footer_section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10% ;
+    }
+
+    .some, .footer_contact {
+        padding: 25px;
+    }
+
+    .p_some, .p_mail, .p_telephone {
+        font-size: 18px;
+    }
+
 }
 
-/* ---------------------- mediaquery desktop ----------------------- */
+/* ---------------------- mediaquery desktop - lille ----------------------- */
 @media screen and(min-width: 1367px) {
 
     /*--Generalt---*/
@@ -854,6 +991,49 @@ a{
         height: 750px;
         margin-top: 40px;
     }
+
+     /*--projekter- forside --*/
+    
+    .my_projects{
+        padding: 100px 22%;
+    }
+
+    .projects{
+        margin: 15px;
+        width: auto;
+    }
+
+    .project_img{
+        height: 500px;
+    }
+
+
+    /*--anbefaling- forside--*/
+    .recommendations{
+         padding: 100px 80px;
+    }
+
+    .recommendation_wrapper{
+        padding: 30px;
+    }
+
+    /*--footer---*/
+    .footer_section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10% ;
+    }
+
+    .some, .footer_contact {
+        padding: 25px;
+    }
+
+    .p_some, .p_mail, .p_telephone {
+        font-size: 18px;
+    }
     
 
 }
+

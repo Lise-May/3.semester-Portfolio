@@ -1,4 +1,4 @@
-//Burgermenu
+//----------------------------------------------------------------Burgermenu-------------------------------------------------------
 //adgang til hamburger og nav-menu class
 const hamburger = document.querySelector(".hamburger"); 
 const navMenu = document.querySelector(".nav-menu");
@@ -17,9 +17,9 @@ document.querySelectorAll(".nav-link").forEach(n => n. //add en eventlistener
 })) 
 
 
-//text rotate typer
+//-----------------------------------------------------------------text rotate typer på forsiden------------------------------------------------------
 
-//
+//adgang til classen type-text
 const typedTextSpan = document.querySelector(".typed-text");
 
 //fjern blike effecten mens den skriver 
@@ -69,3 +69,5 @@ document.addEventListener("DOMContentLoaded", function(){
     if(textArray.length) setTimeout(type, newTextDelay + 250); //være sikekr på at text array ikke er tomt før jeg kalder type funktion - delay før jeg kalder type funktionen 2sek +250 mili sekunder
     
 })
+
+//----------------------------------------------------------------- Til top knap ------------------------------------------------------
