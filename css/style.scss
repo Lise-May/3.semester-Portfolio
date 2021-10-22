@@ -937,8 +937,13 @@ a{
 
     /*---------- Baggrund - underside --------- */
     
+    .background_info{
+        padding: 100px 0 132px 0;
+    }
+
     .h1_background{
         padding-left: 13%;
+        padding-bottom: 40px;
     }
     
     .background_info_wrapper{
@@ -1259,9 +1264,14 @@ a{
 
     /*---------- Baggrund - underside --------- */
 
+    .background_info{
+        padding: 100px 0 132px 0;
+    }
+
     .h1_background{
         font-size: 40px;
-        padding-left: 9%;
+        padding-left: 11%;
+        padding-bottom: 30px;
     }
 
     .background_info_wrapper{
