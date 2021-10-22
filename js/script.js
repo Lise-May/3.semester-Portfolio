@@ -38,7 +38,7 @@ let charIndex = 0; //starter med den første karakter
 function type() { 
     if(charIndex < textArray[textArrayIndex].length) {// skriv den næste karakter hvis den sidste karakter i stringen ikke allerede er skrevet
         if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");//tilføje cursor element som fjerne blinke animationen hvis den ikek allerede er der
-        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex); //tager den aktuelle tekstinghold span += den aktuelle string og for at få the carakter gør jeg rbug afcharAt metode der returne det specifikke character i car undex 
+        typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex); //tager den aktuelle tekstinghold span += den aktuelle string og for at få the carakter gør jeg brug afcharAt metode der returne det specifikke character i car index 
         charIndex++;  //Øger car index med en, så den går videre til den næste carakter. 
         setTimeout(type, typingDelay);  //type refere til en funktion og ikke direkte kald - gør brug af setTimeout metoden. for at kalde type funktionen igen efter at vente på delay
     }
