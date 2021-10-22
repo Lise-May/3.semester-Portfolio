@@ -4,6 +4,7 @@ $primary_white: #ffffff;
 $primary_dark_gray: #444444;
 $primary_light_gray: #C4C4C4;
 $primary_blue: #0040C1;
+$secondary_blue: #316feb;
 /*-----*/
 /*---------- fonts ----------*/
 $primary_font: "Abel", sans-serif;
@@ -73,6 +74,26 @@ main{
     margin-left: auto;
 }
 
+//til top knap
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 210px;
+    right: 10px;
+    z-index: 99;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    background-color: $primary_blue;
+    color: $primary_white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 4px;
+}
+.linkedin_icon{
+    font-size: 2px;
+    color: $primary_dark_gray;
+}
 /*-----*/
 /*---------- nav bar --------- */
 header{
@@ -150,7 +171,6 @@ a{
 .nav-link{
     font-size: 17px;
 }
-
 
 /*-----*/
 /*---------- forside information --------- */
@@ -529,6 +549,13 @@ a{
         font-size: 16px;
     }
 
+    .ln{
+        color: $secondary_blue;
+        font-size: 20px;
+        padding: 10px;
+        font-weight: bold;
+    }
+
     .copyright{
         text-align: center;
         font-size: 12px;
@@ -556,6 +583,23 @@ a{
 
     p{
         font-size: 18px;
+    }
+
+    //til top knap
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 158px;
+        right: 10px;
+        z-index: 99;
+        font-size: 15px;
+        border: none;
+        outline: none;
+        background-color: $primary_blue;
+        color: $primary_white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
     }
 
     /*--heder info ---*/
@@ -694,6 +738,23 @@ a{
 
     p{
         font-size: 20px;
+    }
+
+    //til top knap
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 170px;
+        right: 10px;
+        z-index: 99;
+        font-size: 17px;
+        border: none;
+        outline: none;
+        background-color: $primary_blue;
+        color: $primary_white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
     }
 
     /*--Burgermenu---*/
@@ -955,7 +1016,7 @@ a{
 
 }
 
-/* ---------------------- mediaquery desktop - lille ----------------------- */
+/* ---------------------- mediaquery desktop ----------------------- */
 @media screen and(min-width: 1367px) {
 
     /*--Generalt---*/
@@ -973,6 +1034,23 @@ a{
 
     p{
         font-size: 23px;
+    }
+
+    //til top knap
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 170px;
+        right: 10px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: $primary_blue;
+        color: $primary_white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
     }
 
     /*--Burgermenu---*/

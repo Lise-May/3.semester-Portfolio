@@ -71,3 +71,23 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 //----------------------------------------------------------------- Til top knap ------------------------------------------------------
+
+//få knappen
+var mybutton = document.getElementById("myBtn");
+
+// Når man ruller 20px ned fra toppen vises knappen
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// Når man klikker på knappen så ruller den til toppen
+function topFunction() {
+  document.body.scrollTop = 0; //så den virker i safari
+  document.documentElement.scrollTop = 0; //så jeg er sikker på at den virker i chrome
+}

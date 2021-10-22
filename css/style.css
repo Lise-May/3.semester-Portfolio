@@ -66,6 +66,27 @@ main {
   margin-left: auto;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 210px;
+  right: 10px;
+  z-index: 99;
+  font-size: 13px;
+  border: none;
+  outline: none;
+  background-color: #0040C1;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+.linkedin_icon {
+  font-size: 2px;
+  color: #444444;
+}
+
 /*-----*/
 /*---------- nav bar --------- */
 header {
@@ -602,6 +623,13 @@ a {
   font-size: 16px;
 }
 
+.ln {
+  color: #316feb;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+}
+
 .copyright {
   text-align: center;
   font-size: 12px;
@@ -624,6 +652,21 @@ a {
   }
   p {
     font-size: 18px;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 158px;
+    right: 10px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: #0040C1;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
   }
   /*--heder info ---*/
   .nav-link {
@@ -740,6 +783,21 @@ a {
   }
   p {
     font-size: 20px;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 170px;
+    right: 10px;
+    z-index: 99;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    background-color: #0040C1;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
   }
   /*--Burgermenu---*/
   .nav-menu {
@@ -998,7 +1056,7 @@ a {
   }
 }
 
-/* ---------------------- mediaquery desktop - lille ----------------------- */
+/* ---------------------- mediaquery desktop ----------------------- */
 @media screen and (min-width: 1367px) {
   /*--Generalt---*/
   h1 {
@@ -1012,6 +1070,21 @@ a {
   }
   p {
     font-size: 23px;
+  }
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 170px;
+    right: 10px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #0040C1;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
   }
   /*--Burgermenu---*/
   .nav-menu {
