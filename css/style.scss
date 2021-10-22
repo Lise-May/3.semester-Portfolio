@@ -240,7 +240,7 @@ a{
 /*---------- om mig - forside --------- */
 .h2_about_me{
     color: $primary_blue;
-    font-size: 24px;
+    font-size: 25px;
     text-align: center;
     font: $secondary_font;
 }
@@ -279,6 +279,14 @@ a{
 .the_qout{
     font-size: 20px;
     font-weight: bold;
+}
+
+.img_about_me{
+    width: 50%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 50px;
 }
   
 /*-----*/
@@ -611,6 +619,13 @@ a{
 
     /*--om mig + mine skills---*/
 
+    .h2_about_me{
+        color: $primary_blue;
+        font-size: 30px;
+        font: $secondary_font;
+        padding-bottom: 10px;
+    }
+
     .h2_front_page{
         font-size: 18px;
     }
@@ -825,6 +840,14 @@ a{
     }
 
     /*---------- forside om mig --------- */
+
+    .h2_about_me{
+        color: $primary_blue;
+        font-size: 35px;
+        font: $secondary_font;
+        padding-bottom: 10px;
+    }
+
     .about_me {
         display: grid;
         grid-template-columns: 1.2fr 0.8fr;
@@ -857,6 +880,14 @@ a{
 
     .background_link{
         font-size: 20px;
+    }
+
+    .img_about_me{
+        width: 95%;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 59px;
     }
 
     /*---------- Skills - forside --------- */
@@ -1123,6 +1154,14 @@ a{
     }
 
     /*---------- forside om mig --------- */
+
+    .h2_about_me{
+        color: $primary_blue;
+        font-size: 35px;
+        font: $secondary_font;
+        padding-bottom: 10px;
+    }
+    
     .about_me {
         display: grid;
         grid-template-columns: 1.2fr 0.8fr;
@@ -1158,6 +1197,14 @@ a{
 
     .p_info{
         word-spacing: 2px
+    }
+
+    .img_about_me{
+        width: 95%;
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 0px;
     }
 
     /*---------- Skills - forside --------- */
