@@ -207,7 +207,7 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
 }
 
 .typed-text{
@@ -823,7 +823,7 @@ a{
     }
     .col_left { 
         grid-area: col_left; 
-        padding-top: 250px;
+        padding-top: 100px;
     }
     .col_right { 
         grid-area: col_right; 
@@ -835,8 +835,8 @@ a{
 
     .img_front_info{
        width: 90%; 
-       padding-top: 200px;
-       padding-bottom: 400px;
+       padding-top: 50px;
+       padding-bottom: 100px;
     }
 
     /*---------- forside om mig --------- */
@@ -1184,6 +1184,15 @@ a{
     }
     .col_right_about { 
         grid-area: col_right_about; 
+    }
+
+    .col_left{
+        padding-top: 150px;
+    }
+
+    .img_front_info{
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .about_article{
