@@ -195,7 +195,6 @@ a{
 
 .col_right{
     padding-top: 10%;
-    padding-bottom: 25%;
 }
 
 .h1_front_page{
@@ -824,7 +823,7 @@ a{
     }
     .col_left { 
         grid-area: col_left; 
-        padding-top: 350px;
+        padding-top: 250px;
     }
     .col_right { 
         grid-area: col_right; 
@@ -836,8 +835,8 @@ a{
 
     .img_front_info{
        width: 90%; 
-       padding-top: 300px;
-       padding-bottom: 600px;
+       padding-top: 200px;
+       padding-bottom: 400px;
     }
 
     /*---------- forside om mig --------- */
